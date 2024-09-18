@@ -23,5 +23,5 @@ export default async (request: VercelRequest, response: VercelResponse) => {
 
   const totalSupplys = totalSupply.sub(veNationSupply)
 
-  response.status(200).send(ethers.utils.formatUnits(totalSupplys, 18))
+  response.status(200).send(ethers.utils.formatUnits(totalSupplys, 9))
 }
