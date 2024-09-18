@@ -16,5 +16,5 @@ export default async (request: VercelRequest, response: VercelResponse) => {
 
   const totalSupply: BigNumber = await nationContract.totalSupply()
 
-  response.status(200).send(ethers.utils.formatUnits(totalSupply, 18))
+  response.status(200).send(ethers.utils.formatUnits(totalSupply, 9))
 }
